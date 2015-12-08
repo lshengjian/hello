@@ -2,8 +2,8 @@ package main
 import (
 	"fmt"
 	"math"
-	"os"
-	"strconv"
+//	"os"
+//	"strconv"
 //	"github.com/lshengjian/mymath"
 )
 func IsPrime(x int) bool {
@@ -37,8 +37,8 @@ func Filter(s []int, idx int) []int {
     return p
 }
 func main() {
-	argsWithoutProg := os.Args[1:]
-	TOTAL,_ := strconv.Atoi(argsWithoutProg[0])
+	//argsWithoutProg := os.Args[1:]
+	TOTAL:= 10//strconv.Atoi(argsWithoutProg[0])
 	data:= make([]int,TOTAL)
 	for i:=0 ;i<TOTAL;i++ {
 		data[i]=(i+2)
